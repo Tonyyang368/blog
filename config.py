@@ -14,3 +14,4 @@ class Config(object):
     ADMINS = ['tonyyang368@gmail.com']
     SECURITY_EMAIL_SENDER = 'tonyyang368@gmail.com'
     POSTS_PER_PAGE = 5
+    LOG_TO_STDOUT = os.environ.get('LOG_TO_STDOUT')
