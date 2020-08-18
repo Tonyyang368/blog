@@ -1,4 +1,4 @@
-2020-08-17 22:30:09,239 ERROR: Exception on /explore [GET] [in c:\users\tonyy\blog\virtual\lib\site-packages\flask\app.py:1891]
+2020-08-17 22:02:40,262 ERROR: Exception on /explore [GET] [in c:\users\tonyy\blog\virtual\lib\site-packages\flask\app.py:1891]
 Traceback (most recent call last):
   File "c:\users\tonyy\blog\virtual\lib\site-packages\flask\app.py", line 2447, in wsgi_app
     response = self.full_dispatch_request()
@@ -31,7 +31,7 @@ Traceback (most recent call last):
   File "c:\users\tonyy\blog\virtual\lib\site-packages\werkzeug\routing.py", line 2179, in build
     raise BuildError(endpoint, values, method, self)
 werkzeug.routing.BuildError: Could not build url for endpoint 'Please log in to access this page'. Did you mean 'main.edit_profile' instead?
-2020-08-17 22:30:09,761 ERROR: Exception on /index [GET] [in c:\users\tonyy\blog\virtual\lib\site-packages\flask\app.py:1891]
+2020-08-17 22:02:45,478 ERROR: Exception on /explore [GET] [in c:\users\tonyy\blog\virtual\lib\site-packages\flask\app.py:1891]
 Traceback (most recent call last):
   File "c:\users\tonyy\blog\virtual\lib\site-packages\flask\app.py", line 2447, in wsgi_app
     response = self.full_dispatch_request()
@@ -64,7 +64,27 @@ Traceback (most recent call last):
   File "c:\users\tonyy\blog\virtual\lib\site-packages\werkzeug\routing.py", line 2179, in build
     raise BuildError(endpoint, values, method, self)
 werkzeug.routing.BuildError: Could not build url for endpoint 'Please log in to access this page'. Did you mean 'main.edit_profile' instead?
-2020-08-17 22:30:12,344 ERROR: Exception on /index [GET] [in c:\users\tonyy\blog\virtual\lib\site-packages\flask\app.py:1891]
+2020-08-17 22:04:02,247 ERROR: Exception on /index [POST] [in c:\users\tonyy\blog\virtual\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\tonyy\blog\virtual\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\tonyy\blog\virtual\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\tonyy\blog\virtual\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\tonyy\blog\virtual\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\tonyy\blog\virtual\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\tonyy\blog\virtual\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\tonyy\blog\virtual\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\tonyy\blog\app\main\routes.py", line 17, in index
+    language = guess_language(form.post.data)
+NameError: name 'guess_language' is not defined
+2020-08-17 22:04:42,325 INFO: Blog startup [in C:\Users\tonyy\blog\app\__init__.py:66]
+2020-08-17 22:05:07,077 ERROR: Exception on /index [GET] [in c:\users\tonyy\blog\virtual\lib\site-packages\flask\app.py:1891]
 Traceback (most recent call last):
   File "c:\users\tonyy\blog\virtual\lib\site-packages\flask\app.py", line 2447, in wsgi_app
     response = self.full_dispatch_request()
@@ -97,6 +117,22 @@ Traceback (most recent call last):
   File "c:\users\tonyy\blog\virtual\lib\site-packages\werkzeug\routing.py", line 2179, in build
     raise BuildError(endpoint, values, method, self)
 werkzeug.routing.BuildError: Could not build url for endpoint 'Please log in to access this page'. Did you mean 'main.edit_profile' instead?
-2020-08-17 22:33:41,871 INFO: Blog startup [in C:\Users\tonyy\blog\app\__init__.py:66]
-2020-08-18 10:41:30,754 INFO: Blog startup [in C:\Users\tonyy\blog\app\__init__.py:66]
-2020-08-18 11:00:25,259 INFO: Blog startup [in C:\Users\tonyy\blog\app\__init__.py:71]
+2020-08-17 22:07:10,717 ERROR: Exception on /follow/cat12 [POST] [in c:\users\tonyy\blog\virtual\lib\site-packages\flask\app.py:1891]
+Traceback (most recent call last):
+  File "c:\users\tonyy\blog\virtual\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\tonyy\blog\virtual\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\tonyy\blog\virtual\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\tonyy\blog\virtual\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\tonyy\blog\virtual\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\tonyy\blog\virtual\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\tonyy\blog\virtual\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\tonyy\blog\app\main\routes.py", line 97, in follow
+    flash('You are following %(username)s!', username=user.username)
+TypeError: flash() got an unexpected keyword argument 'username'
