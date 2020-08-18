@@ -100,3 +100,4 @@ werkzeug.routing.BuildError: Could not build url for endpoint 'Please log in to 
 2020-08-17 22:33:41,871 INFO: Blog startup [in C:\Users\tonyy\blog\app\__init__.py:66]
 2020-08-18 10:41:30,754 INFO: Blog startup [in C:\Users\tonyy\blog\app\__init__.py:66]
 2020-08-18 11:00:25,259 INFO: Blog startup [in C:\Users\tonyy\blog\app\__init__.py:71]
+2020-08-18 12:33:44,233 INFO: Blog startup [in C:\Users\tonyy\blog\app\__init__.py:71]
