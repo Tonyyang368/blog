@@ -7,6 +7,12 @@ from app.main.forms import EditProfileForm, EmptyForm, PostForm
 from app.models import User, Post
 from app.main import bp
 
+@bp.route('/user/<username>/popup')
+@login_required
+def user_popup(username):
+    user = User.query.filter_by(username=username).first_or_404
+    form = EmptyForm()
+    return render_template('user_popup.html', user=user, form=form)
 
 @bp.route('/', methods=['GET', 'POST'])
 @bp.route('/index', methods=['GET', 'POST'])
